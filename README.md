@@ -1,7 +1,7 @@
 ## COMPSCI 101 The Website
 #### Introduction to Computers and Programming
 
-[www.compsci.nz](http://www.compsci.nz)
+[http://www.compsci.nz](http://www.compsci.nz)
 
 © 2015 Aaron Haines
 
