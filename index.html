@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>COMPSCI 101 The Website by compscinz</title>
+    <title>COMPSCI 101 by compscinz</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -15,99 +15,53 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="http://www.compsci.nz">COMPSCI 101</a></h1>
-        <h2>The Website</h2>
-        <p>Introduction to Computers and Programming (Version 0.2 Alpha)</p>
-        <p class="view"><a href="http://www.compsci.nz">Go!</a></p>
-        <p class="view"><a href="http://www.compsci.nz/ch2">What's in the Course</a></p>
+        <h1>COMPSCI 101</h1>
+        <p>Introduction to Computers and Programming (Version 0.4 Alpha)</p>
+
+
+        <p class="view"><a href="https://github.com/compscinz">View My GitHub Profile</a></p>
 
       </header>
       <section>
-<h1>
-<a id="go" class="anchor" href="#go" aria-hidden="true"><span class="octicon octicon-link"></span></a>Go!</h1>
+        <h2>
+<a id="go" class="anchor" href="#go" aria-hidden="true"><span class="octicon octicon-link"></span></a>Go!</h2>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/robo.png" alt="robo"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/robo.png" alt="go_robo"></p>
 
 <p>Here is Robo, maybe we will build him one day.</p>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/robo_cpu_flash.png" alt="robo_cpu_flash"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_hardware.png" alt="go_hardware"></p>
 
 <p>He has a central processing unit somewhere inside his head that reads computer programs and runs them, and some flash memory where all of the computer programs are stored.</p>
 
-<blockquote>
-<p>Go check his hardware by pressing the button</p>
-</blockquote>
-
-<center><button style="border-color:black; background-color:white; border-radius:5px" >Check<br>Hardware</button></center>
-
-<br>
-
-<pre><code>Checking hardware...
+<pre><code>$ check hardware
+Checking hardware...
 CPU installed
 Flash Memory installed
 Everything is OK!
 </code></pre>
 
-<blockquote>
-<p>A central processing unit has something to do with (choose one):</p>
+<p>This is the terminal where we enter our commands and communicate with Robo.</p>
 
-<ul>
-<li>running programs</li>
-<li>storing programs</li>
-<li>eating programs</li>
-</ul>
-
-<p>Flash memory has something to do with:</p>
-
-<ul>
-<li>running programs</li>
-<li>watching programs</li>
-<li>storing programs</li>
-</ul>
-</blockquote>
-
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/speech_move.png" alt="speech_move"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_speak.png" alt="go_speak"></p>
 
 <p>He doesn't understand the language we speak, he only understands Robo Language 1.0, which is installed in the flash memory.</p>
 
 <p>Robo Language 1.0 looks like this:</p>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/lang1.0.png" alt="lang1.0"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_1.0.png" alt="go_1.0"></p>
 
-<p>Let's program Robo to move somewhere.</p>
+<p>We can write a program using the arrows as our code to move Robo.</p>
 
-<p><br></p>
-
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/level.png" alt="level"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_level1.png" alt="go_level1"></p>
 
 <blockquote>
-<p>Go write a move.bot program, upload it to Robo and then run it.</p>
+<p>Write a move.bot program, upload it to Robo and then run the program.</p>
 </blockquote>
 
-<pre><code>// Anything after two slashes is a comment that tells us stuff
-// Comments are not part of the program
-// Write move.bot below
-
-
-
-
-
-
-//
-</code></pre>
-
-<center><button style="border-color:black; background-color:white; border-radius:5px" >Upload</button></center>
-
-<br>
-
 <pre><code>Uploading program move.bot to Flash Memory
-</code></pre>
 
-<center><button style="border-color:black; background-color:white; border-radius:5px" >Run</button></center>
-
-<br>
-
-<pre><code>Reading program move.bot from Flash Memory
+Reading program move.bot from Flash Memory
 Running program move.bot
 </code></pre>
 
@@ -115,58 +69,36 @@ Running program move.bot
 
 <p>Let's update our software to Robo Language 2.0 using the terminal.</p>
 
-<blockquote>
-<p>Go write <code>update robo-lang</code> after the <code>$</code></p>
-</blockquote>
-
-<pre><code>$
+<pre><code>$ update robo-lang
 Updating robo-lang to version 2.0
 Update complete!
 </code></pre>
 
 <p>Robo Language 2.0 looks like this:</p>
 
-<pre><code>step 2      // step forward two spaces, you can choose any number
-turn right             // turn right 90 degrees, you can choose left also
+<pre><code>step 2          // step forward two spaces
+turn right      // turn right 90 degrees
 </code></pre>
 
 <p>Let's program Robo to get back to the start.</p>
 
-<blockquote>
-<p>Go write a program, <code>upload move.bot</code> and then <code>run move.bot</code></p>
-</blockquote>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_level2.png" alt="go_level2"></p>
 
-<pre><code>// Write move.bot here
-
-
-
-
-
-
-//
-</code></pre>
-
-<p><br></p>
-
-<pre><code>$
+<pre><code>$ upload move.bot
 Uploading program move.bot to Flash Memory
 
-$
+$ run move.bot
 Reading program move.bot from Flash Memory
 Running program move.bot
 </code></pre>
 
 <p>Let's get ready for the next course.</p>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/level_crack.png" alt="level_crack"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_level3.png" alt="go_level3"></p>
 
-<p>A big crack has appeared in Robo's path! But we do not have an instruction that can get him over it. In programming you can write new programs to do things. What we need is more control over Robo.</p>
+<p>A big crack has appeared in Robo's path! But we do not have an instruction that can get him over it. In programming you can code new ways to do things. What we need is more control over Robo.</p>
 
-<blockquote>
-<p>Go <code>update robo-lang</code></p>
-</blockquote>
-
-<pre><code>$
+<pre><code>$ update robo-lang
 Updating robo-lang to version 3.0
 Update complete!
 </code></pre>
@@ -184,61 +116,34 @@ step(2)
 turn(90)
 </code></pre>
 
-<blockquote>
-<p>Go write a program, upload and then run it</p>
-</blockquote>
-
-<pre><code>// Write move.bot here
-
-
-
-
-
-
-//
-</code></pre>
-
 <p><br></p>
 
-<pre><code>$
+<pre><code>$ upload move.bot
 Uploading program move.bot to Flash Memory
 
-$
+$ run move.bot
 Reading program move.bot from Flash Memory
 Running program move.bot
 </code></pre>
 
 <p>Robo was taking awhile to process our new instructions. It is time we upgraded his hardware.</p>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/robo_cpu_flash.png" alt="robo_cpu_flash"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_hardware.png" alt="go_hardware"></p>
 
 <p>Inside Robo's head is the CPU that reads and runs our program and the flash memory where we are storing our program. As a program gets bigger more and more instructions are being read from our program. We are using flash memory to store our program but this can be slow to read from. A type of fast memory is called RAM. RAM is fast to read and write to but when the power goes off everything is erased.</p>
 
 <p>We will store our program in flash memory, when we run our program the CPU will copy the program from flash memory to RAM, and then the CPU will read our instructions faster from RAM. Let's install some RAM.</p>
 
-<blockquote>
-<p>Go write RAM in the empty part</p>
-</blockquote>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_hardware_ram.png" alt="go_hardware_ram"></p>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/robo_ram.png" alt="robo_ram"></p>
-
-<blockquote>
-<p>Go <code>check hardware</code></p>
-</blockquote>
-
-<pre><code>$
+<pre><code>$ check hardware
 Checking hardware...
 CPU installed
 Flash Memory installed
 RAM installed
 Everything is OK!
-</code></pre>
 
-<blockquote>
-<p>Go run the program again</p>
-</blockquote>
-
-<pre><code>$
+$ run move.bot
 Copying program move.bot from Flash Memory to RAM
 Reading program move.bot from RAM
 Running program move.bot
@@ -246,33 +151,456 @@ Running program move.bot
 
 <p>We are ready to begin COMPSCI 101 and learn to...</p>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/hacker.png" alt="hacker"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_hacker.png" alt="go_hacker"></p>
 
-<p>Wait a minute somebody is hacking into Robo!</p>
+<p>Wait! Somebody is hacking into Robo!</p>
 
 <p>To stop somebody else programming Robo we need security.</p>
 
-<blockquote>
-<p>Go <code>set password</code></p>
-</blockquote>
-
-<pre><code>$
+<pre><code>$ set password
 Enter Password:
 Confirm Password:
 Password Set!
 </code></pre>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/hacker_denied.png" alt="hacker_denied"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_hacker_no.png" alt="go_hacker_no"></p>
 
 <p>Take that hacker!</p>
 
-<p>Good, now we have had a taste of what this course is all about. Let's move on and see <strong><a href="http://www.compsci.nz/ch2">what's in the course</a></strong>.</p>
+<p>Good, now we have had a taste of what this course is all about. Let's move on.</p>
+
+<h2>
+<a id="whats-in-the-course" class="anchor" href="#whats-in-the-course" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's in the Course</h2>
+
+<p>We are going to be <strong>thinking like a computer</strong>. That is more of what we have been doing so far with Robo Language 1.0 and also looking at binary 1010 0110, no it is not the Matrix but how computers understand.</p>
+
+<p>We are going to be taking a <strong>look inside computers</strong>. That is adding to our list of hardware: CPU, flash memory, RAM, hard drive, disk drive, power supply and more.</p>
+
+<p>We are going to be <strong>using any computer</strong> in front of us. That is navigating an operating system, learning how to use our software, understanding the magic behind files and getting down and dirty with the command line.</p>
+
+<p>We are going to be <strong>programming</strong>. First learning the basics with Robo Language 2.0 and then delving into the programming languages of games, the web, and electronics - we will do it all while coding our own calculator, games, website and by blinking some LEDs.</p>
+
+<p>We are going to be taking our <strong>security and privacy</strong> seriously. That is creating strong passwords, deciding what information to share online and looking at the realities of the internet.</p>
+
+<p>Finally we will discuss <strong>copyright and ethics</strong> in computing and decide on the kind of world we want to live and code in.</p>
+
+<p>Good, now we have an idea of what is to come in this course. Let's move on.</p>
+
+<h2>
+<a id="thinking-like-a-computer" class="anchor" href="#thinking-like-a-computer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thinking Like a Computer</h2>
+
+<p>A computer is perfect. It will follow every instruction you give, and never complain, unlike your little brother or sister. This is what makes a computer so great, and also so annoying. You see it will follow every instruction you give, and never complain, not even if you tell it to blow itself up! So you better be careful what you tell it to do, because a computer is perfect.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_level1.png" alt="think_level1"></p>
+
+<p>We want to move Robo to the other side of the wall. It looks like we cannot move forward - we have to turn. If we tell Robo to step forward instead of turn he will definitely walk straight into the wall.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_level2.png" alt="think_level2"></p>
+
+<p>Ouch! Sorry Robo. We need to be careful with our instructions.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/go_1.0.png" alt="go_1.0"></p>
+
+<p>These instructions we are writing are part of Robo Language 1.0. Robo Language 1.0 is a complete set of instructions that Robo understands. We will learn more of the set as we go.</p>
+
+<p>When we write a set of instructions for a computer it is called coding - we are writing code.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_level3.png" alt="think_level3"></p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_1.0_function.png" alt="think_1.0_function"></p>
+
+<p>The instruction above tells Robo to step forward three spaces. We can use this type of notation with all of the Robo Language 1.0 instructions to shorten our code.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_level4.png" alt="think_level4"></p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_1.0_jump.png" alt="think_1.0_jump"></p>
+
+<p>The instruction above tells Robo to jump over one space.</p>
+
+<p>Perfect isn't he. Little Robo does what he's told.</p>
+
+<p>So why is it that he follows instructions like that? Well at a very basic level Robo like any computer thinks in only two ways: on and off.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_binary.png" alt="think_binary"></p>
+
+<p>This is what we call binary. Often binary is explained as ones and zeroes, but all this is really telling us is that there are only two ways of doing something - either the thing is on (1) or it is off (0).</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_binary_switch.png" alt="think_binary_switch"></p>
+
+<p>Have you ever seen a power switch with a 1 and 0 on it? This let's us know when the power is on or off and is the same way a computer works at a very basic level.</p>
+
+<p>So how does this explain how a computer thinks because they can do a lot more than just turn on and off? That's true and it is because of a lot of offs and ons. Let's start with what one on/off looks like and build up.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_binary.png" alt="think_binary_light"></p>
+
+<p>A light switch is the best on/off example to look at and is literally on and off. When the switch is in the off position there is a space between two bits of metal and no electricity can flow in the circuit, so a dark room for us. When the switch is flicked on the two bits of metal touch, electricity begins to flow and we can see.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_binary_3light.png" alt="think_binary_3light"></p>
+
+<p>Now let's triple the amount of lights! One lightbulb is red, one is green and one is blue and they are all right next to each other and each light has its own switch. Light is cool because we can combine colours to make other colours, like mixing paint but sort of reverse. Anyway if we turn the red and green lights on and keep the blue light off we get yellow light. If we turn the red light off but keep the green and blue on we get cyan, a nice sky blue looking one.</p>
+
+<p>Three switches, three ons and offs, multiple combinations - or codes?</p>
+
+<p>Yes codes!</p>
+
+<p>Red on, green on, blue off, is yellow. So in terms of switches: on, on, off = yellow. And remember sometimes on a switch, 1 is for on and 0 is for off. So 110 = yellow.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_rgb.png" alt="think_rgb"></p>
+
+<p>Here is the full colour model for visible light.</p>
+
+<table>
+<thead>
+<tr>
+<th>Letter</th>
+<th>Binary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>0100 0001</td>
+</tr>
+<tr>
+<td>B</td>
+<td>0100 0010</td>
+</tr>
+<tr>
+<td>C</td>
+<td>0100 0011</td>
+</tr>
+<tr>
+<td>D</td>
+<td>0100 0100</td>
+</tr>
+<tr>
+<td>E</td>
+<td>0100 0101</td>
+</tr>
+<tr>
+<td>F</td>
+<td>0100 0110</td>
+</tr>
+</tbody>
+</table>
+
+<p>This is some of the ASCII alphabet used to represent letters in computers that use text. Each letter is coded in eight bits. A computer can decode the binary and match it to the correct letter.</p>
+
+<pre><code>0100 0010
+0100 0101
+0100 0101
+0100 0110
+</code></pre>
+
+<p>The oppostite of decoding, figuring out the code, is encoding, creating the code.</p>
+
+<p>This seems like a lot of work just to make some colours and letters. Luckily we don't have to go so deep inside a computer that we have to manually switch each little thing on and off - we have programming languages like Robo Language 1.0 that somebody has already figured out and given us some easy codes that do a million and one things underneath. But we know that we can go really deep and do it ourselves if we need to.</p>
+
+<p>Good, now we know a computer is perfect and thinks nothing like us. Let's move on.</p>
+
+<h2>
+<a id="looking-inside-a-computer" class="anchor" href="#looking-inside-a-computer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Looking Inside a Computer</h2>
+
+<p>A computer has stuff inside it and that stuff is called hardware. Is it hardware because it is hard, maybe. And it doesn't matter what computer you look inside because they all have something in common.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_hardware.png" alt="go_hardware"> <img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_robo.png" alt="go_robo"></p>
+
+<p>Remember Robo? In the beginning his head had just a CPU and some flash memory inside of it - having something that processes information and something that stores information is pretty common for a computer.</p>
+
+<p>What computer should we look in? Your laptop? Your phone? Yes your phone might be a computer. Some people call them smartphones but if you can tell it to destroy itself and it will, it doesn't sound very smart. No, let us take a look inside a classic desktop computer - the parts are big and easy to get at.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch4/inside_pc.png" alt="inside_pc"></p>
+
+<p>Do not worry about remembering everything that follows - we will take our time to figure it out. But first we must name each part and build on that.</p>
+
+<p>The central processing unit (<strong>CPU</strong>) reads and writes data from the hard drive and RAM, and controls everything in the computer.</p>
+
+<p>The <strong>hard drive</strong> is where we store programs that we want to keep after the computer is turned off. It is a type of slow memory.</p>
+
+<p>The <strong>RAM</strong> (random access memory) is a type of fast memory used to do things while the computer is turned on. When the computer is turned off everything on the RAM is gone.</p>
+
+<p>The <strong>power supply</strong> converts power from the wall socket into something all of the other computer parts use, and feeds the power to all of the other parts.</p>
+
+<p>The <strong>disc drives</strong> are used to read and write to optical media which are just CDs and DVDs. Discs use a fascinating form of binary that we will look at.</p>
+
+<p>There are many more pieces to a desktop computer: ports for devices, sound and video stuff, network stuff. But the pieces above are the main ones.</p>
+
+<p>We are now going to take a look at what these parts can do for a computer by installing more hardware into Robo.</p>
+
+<pre><code>$ check hardware
+Checking hardware...
+CPU installed
+Flash Memory installed
+RAM installed
+Everything is OK!
+</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_hardware_ram.png" alt="go_hardware_ram"></p>
+
+<p>Earlier we decided to install some RAM into Robo and store our computer program in flash memory, then let the CPU copy the program from flash memory to RAM, and then the CPU read our instructions faster from RAM and Robo did things quicker.</p>
+
+<p>This was because flash memory like hard drive memory is slow and RAM is fast. The CPU was the part doing the reading and writing of programs to the different memory.</p>
+
+<p>What I didn't tell you before was that our flash memory is almost full! And we are not going to be able to store any more software on to Robo without deleting something else. What we can do is install a big hard drive, move all of our files from flash onto it and solve all of our issues.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch4/inside_hardware_hdd.png" alt="inside_hardware_hdd"></p>
+
+<pre><code>$ copy Flash memory to Hard Drive
+Copying data...
+Complete!
+
+$ erase Flash Memory
+Erasing data...
+Complete!
+</code></pre>
+
+<p>We will use the flash memory for something else later.</p>
+
+<p>Something else I didn't tell you was Robo is running on a rechargeable battery. This is a bit annoying because to charge the battery we have to take it out of Robo and plug it into a wall charger. What we want is a way to charge our battery while it is installed in Robo. We will use a power supply to do this.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch4/inside_hardware_power.png" alt="inside_hardware_power"></p>
+
+<p>Now that we have put a power supply into Robo, anytime we want to charge him up we just plug him into the wall. What is important to know is that we need a power supply to convert the voltage amount from the wall into lower voltages that our computer parts run on - otherwise things would be melting, burning and possibly blowing up.</p>
+
+<pre><code>$ check hardware
+Checking hardware...
+CPU installed
+Flash Memory installed
+RAM installed
+Hard Drive installed
+Power Supply installed
+Everything is OK!
+</code></pre>
+
+<p>To tie this chapter on hardware to the binary we learnt about earlier we are going to talk about CDs and DVDs.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch4/inside_disc.png" alt="inside_disc"></p>
+
+<p>A CD or DVD is a disc. They encode binary data in the form of physical pits and lands.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch4/inside_disc_close.png" alt="inside_disc_close"></p>
+
+<p>A disc drive reads the binary code by shooting a laser at the disc as it spins. The laser will bounce directly back if it hits a land - this means the binary data is reading 1 (or on). If the laser hits a pit the laser will bounce away and this means 0 (or off).</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch4/inside_disc_level.png" alt="inside_disc_level"></p>
+
+<p>The code is sent to the CPU and the CPU follows those instructions like play the music or movie. It is a very fast and fascinating process - but most things inside computers are very fast and fascinating.</p>
+
+<p>Good, now we know what is inside a computer and why. Let's move on.</p>
+
+<h2>
+<a id="using-a-computer" class="anchor" href="#using-a-computer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using a Computer</h2>
+
+<p>A computer has stuff stored in its memory and that stuff is called software. Is it software because it is soft, no, its just not hardware. And its just a bunch of code, really that's it.</p>
+
+<p>Remember Robo? In the beginning, he had computer programs stored in his flash memory - that was software and that was just code.</p>
+
+<p>So where should we start? Well at the start. At the point where you press the on button. We call this booting up.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_boot.png" alt="using_boot"></p>
+
+<p>If we watch the screen when we press the power button we will see some interesting stuff. We might see some budget looking text and maybe an image. This will go away and a little while later a familiar logo will come up and then we will end up at our fancy login screen. We have experienced an important process.</p>
+
+<p>What happened was everything - before then there was nothing.</p>
+
+<p>That first budget looking part is the BIOS. It is a kind of software called firmware that checks hardware and gets it ready to go. It is the first piece of software to run and usually is stored on flash memory. Didn't Robo have some free flash memory?</p>
+
+<pre><code>$ write BIOS to Flash Memory
+Writing data...
+Complete!
+</code></pre>
+
+<p>Now that Robo has a BIOS we can plug him into a screen and something will show up.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_plugin.png" alt="using_plugin"></p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_bios.png" alt="using_bios"></p>
+
+<p>We are looking at the BIOS but nothing else happened. Where is our fancy stuff? What we were expecting to show up next is called an operating system (OS).</p>
+
+<p>An OS is all of that software we know and love. Windows, OS X and Linux are all popular operating systems. The second job of the BIOS is to run the OS which is usually stored on a hard drive. We need to install an OS on Robo's hard drive.</p>
+
+<pre><code>$ install OSRobo
+Warning: This will erase everything on the hard drive
+Do you wish to continue? Yes
+Installing OS...
+Complete!
+
+Rebooting Robo...
+</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_bios.png" alt="using_bios"></p>
+
+<p>We are back at the BIOS. RoBIOS does not automatically run an OS, it let's us choose which OS we want to run. We can do this on any computer by pressing a special key like ESC or F8 on boot. We can boot different OSes from our hard drive or even boot an entire operating system from a USB stick.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_bios_os.png" alt="using_bios_os"></p>
+
+<p><img alt="using_os"></p>
+
+<p>This is the desktop of OSRobo. It has a few good programs already on it: a file manager, web browser, text editor and terminal.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os_mouse.png" alt="using_os_mouse"></p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os_files.png" alt="using_os_files"></p>
+
+<p>This is our file manager where we can find our documents and pictures.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os_files_os.png" alt="using_os_files_os"></p>
+
+<p>This is everything. Everything inside these folders is our operating system. There are folders inside of these folders and files inside of the folders. Basically an OS is a bunch of files and those files are full of code - even all of this fancy stuff we are looking at. Let's prove this.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os_cmd.png" alt="using_os_cmd"></p>
+
+<p>This is our OS with all of the fancy graphics removed. We are sitting at what is called the command line. It is a text based interface that let's you do anything on your computer that you would normally do. We get around the command line by typing in commands and pressing enter. We have actually used it a lot already. It is how we updated and installed things to Robo earlier and had a dollar sign at the beginning.</p>
+
+<p>The <code>ls</code> command lists the contents of the directory.</p>
+
+<pre><code>$ ls
+System Home Boot
+</code></pre>
+
+<p>These are the folders we saw before in our file manager. Folders are also called directories. Right now we are in the root directory which if we imagine everything as a tree, we are at the lowest root where everything else will branch out from.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_tree.png" alt="using_tree"></p>
+
+<p>The <code>cd</code> command changes into the a directory of our choosing.</p>
+
+<pre><code>$ cd Home
+$ ls
+Documents Pictures Videos
+</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_tree_home.png" alt="using_tree_home"></p>
+
+<pre><code>$ cd Documents
+$ ls
+</code></pre>
+
+<p>When nothing happens with <code>ls</code> it means the directory is empty.</p>
+
+<pre><code>$ edit text.txt
+-------------------------
+editor: press Esc to save
+-------------------------
+</code></pre>
+
+<p>We just ran the text editor program <code>edit</code> and created a new text file <code>text.txt</code>.</p>
+
+<pre><code>-------------------------
+editor: press Esc to save
+-------------------------
+Hello World
+</code></pre>
+
+<p><br></p>
+
+<pre><code>$ ls
+text.txt
+</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_tree_text.png" alt="using_tree_text"></p>
+
+<p>The directory is no longer empty as our file is there now. Let's return to the graphical desktop.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os_files_os2.png" alt="using_os_files_os2"></p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os_files_home.png" alt="using_os_files_home"></p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os_files_text.png" alt="using_os_files_text"></p>
+
+<p>Back on the graphical desktop we can see that our new file exists here too.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os_edit.png" alt="using_os_edit"></p>
+
+<p>We have opened our file in the text editor and we can see what we wrote in it before.</p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os.png" alt="using_os"></p>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os_terminal.png" alt="using_os_terminal"></p>
+
+<p>This is the command line but inside a nice graphical program that we can use on the desktop.</p>
+
+<pre><code>$ ls
+System Home Boot
+$ cd Home
+$ ls
+Document Pictures Videos
+$ cd Documents
+$ ls
+text.txt
+$ del text.txt
+$ ls
+</code></pre>
+
+<p>We deleted our file and now have an empty directory again.</p>
+
+<p>Our text file ended in .txt, this labelled it as a text file and when we opened it with the text editor we could read it because the text editor software was built to handle plain text files.</p>
+
+<p>There are a lot of file types like .doc, .jpg, .pdf, .html, and different software programs know how to decode the text written in them. Putting .doc at the end of a file doesn't do anything to the code, but it does automatically try and open it with a piece of software that knows what to do with the code .doc files are written in.</p>
+
+<p>Let's do something cool with a file.</p>
+
+<pre><code>$ edit hello.html
+-------------------------
+editor: press Esc to save
+-------------------------
+&lt;!DOCTYPE html&gt;
+&lt;body&gt;My web page!&lt;/body&gt;
+</code></pre>
+
+<p>An HTML file is what a web browser reads and ends in .html. HTML is a markup language used to create web pages that we are going to learn a lot about later. We just wrote a very basic HTML file.</p>
+
+<pre><code>$ browser hello.html
+Runnning browser software...
+</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os_browser.png" alt="using_os_browser"></p>
+
+<p>That is our web page! It only exists locally on Robo right now. It will take a bit more to get in online but it is a great start.</p>
+
+<p>Good, now we know about software from boot up to desktop. Let's move on.</p>
+
+<h2>
+<a id="programming" class="anchor" href="#programming" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programming</h2>
+
+<p>This chapter is not finished for this version of the course. In the final version we would be working through Robo Language 2.0 and discovering the key elements of any programming language:</p>
+
+<ul>
+<li>Comments</li>
+<li>Printing</li>
+<li>Variables</li>
+<li>User Input</li>
+<li>Math Operators</li>
+<li>Comparators</li>
+<li>Functions</li>
+<li>If Else</li>
+<li>Loops</li>
+<li>Lists</li>
+<li>Classes</li>
+<li>File IO</li>
+<li>Language Intricacies</li>
+</ul>
+
+<p>Instead we will head over to CodeMonkey (<a href="http://www.playcodemonkey.com">http://www.playcodemonkey.com</a>) and work through the first 30 levels included in their free trial. CodeMonkey is a web application that uses CoffeeScript - an easy-to-use language that compiles to Javascript, the language of the web. We will learn the basics there.</p>
+
+<p>Then we will sign up for Codecademy (<a href="http://www.codecademy.com">http://www.codecademy.com</a>) and begin to work through their language introductory courses. We will learn the basics of some very popular programming langauges and skills: Python, HTML/CSS, JavaScript, Command Line.</p>
+
+<p>This will set us up well for this different programming tasks, including:</p>
+
+<ul>
+<li>Create a Q&amp;A machine that takes user input and gives information back.</li>
+<li>Build a text-based calculator.</li>
+<li>Make a text-based role playing game.</li>
+<li>Make a text-based two-player game of noughts and crosses.</li>
+<li>Build a local website.</li>
+<li>Blink some LEDs using electronics.</li>
+</ul>
       </section>
       <footer>
-        <p><small>© 2015 Aaron Haines. This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-
+    
   </body>
 </html>
