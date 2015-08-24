@@ -10,25 +10,25 @@ $(document).ready(function() {
 
 // Level 1
     $("#level1up").click(function() {
-        $(".list").append('<img id="up" src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_step_forward.png" alt="go_1.0_step_forward">');
+        $(".list").append('<img id="up" src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_1.0_step_forward.png" alt="go_1.0_step_forward">');
     });
     $(document).on("click", "#up", function() {
         $(this).remove();
     });
     $("#level1down").click(function() {
-        $(".list").append('<img id="down" src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_step_backward.png" alt="go_1.0_step_backward">');
+        $(".list").append('<img id="down" src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_1.0_step_backward.png" alt="go_1.0_step_backward">');
     });
     $(document).on("click", "#down", function() {
         $(this).remove();
     });
     $("#level1right").click(function() {
-        $(".list").append('<img id="right" src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_turn_right.png" alt="go_1.0_turn_right">');
+        $(".list").append('<img id="right" src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_1.0_turn_right.png" alt="go_1.0_turn_right">');
     });
     $(document).on("click", "#right", function() {
         $(this).remove();
     });
     $("#level1left").click(function() {
-        $(".list").append('<img id="left" src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_turn_left.png" alt="go_1.0_turn_left">');
+        $(".list").append('<img id="left" src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_1.0_turn_left.png" alt="go_1.0_turn_left">');
     });
     $(document).on("click", "#left", function() {
         $(this).remove();
