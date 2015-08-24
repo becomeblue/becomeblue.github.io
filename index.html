@@ -59,7 +59,7 @@ Check Robo's hardware by entering the command below
    <tr>
     <td><p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_code.png" alt="go_1.0_code"></p>
     <button id='robo-button'><strong>Run Code</strong></button></td>
-     <td><p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_robo.png" alt="go_robo" id='robo'></td>
+     <td><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_robo.png" alt="go_robo" id='robo'></td>
    </tr>
 </table>
 
@@ -68,19 +68,19 @@ Check Robo's hardware by entering the command below
 <table style="width:100%">
     <tr>
         <td><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_step_forward.png" alt="go_1.0_step_forward"></td>
-        <td><p>step forward one space<p></td>
+        <td><p>move up one space<p></td>
     </tr>
     <tr>
         <td><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_step_backward.png" alt="go_1.0_step_backward"></td>
-        <td><p>step back one space<p></td>
+        <td><p>move down one space<p></td>
     </tr>
     <tr>
         <td><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_turn_right.png" alt="go_1.0_turn_right"></td>
-        <td><p>turn 90 degrees clockwise<p></td>
+        <td><p>move right one space<p></td>
     </tr>
     <tr>
         <td><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_turn_left.png" alt="go_1.0_turn_left"></td>
-        <td><p>turn 90 degrees anti-clockwise<p></td>
+        <td><p>move left one space<p></td>
     </tr>
 </table>
 
@@ -88,11 +88,28 @@ Check Robo's hardware by entering the command below
 
 <p>Our program needs to be saved into a file ending with <code>.bot</code>. This tells the software on Robo that our file is a set of instructions meant for Robo.
 
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_level1.png" alt="go_level1" style="position: relative; top: 0; left: 0;"/></p>
+
 <blockquote>
 <p>Write a computer program called <code>move.bot</code> to get Robo from where he is standing to where we want him to go.
 </blockquote>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_level1.png" alt="go_level1"></p>
+<table style="width:100%">
+    <td>
+        <button id="level1up"><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_step_forward.png" alt="go_1.0_step_forward"></button>
+    </td>
+    <td>
+        <button id="level1down"><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_step_backward.png" alt="go_1.0_step_backward"></button>
+    </td>
+    <td>
+        <button id="level1right"><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_turn_right.png" alt="go_1.0_turn_right"></button>
+    </td>
+    <td>
+        <button id="level1left"><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_turn_left.png" alt="go_1.0_turn_left"></button>
+    </td>
+</table>
+<br>
+<div class="list"></div>
 
 <pre><code>
 <div>$ upload move.bot</div>
@@ -109,6 +126,12 @@ Check Robo's hardware by entering the command below
 <button id='run2'><strong>Enter Command</strong></button>
 <button id='reset2'><strong>Reset</strong></button>
 <br><br>
+
+<div style="position: relative; left: 0; top: 0;">
+  <img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_level1.png" alt="go_level1" style="position: relative; top: 0; left: 0;"/>
+  <img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_robo.png" alt="go_robo" id='robo2' style="position: absolute; top: 0px; left: 0px; height:60px; width:60px;"/>
+</div>
+<br>
 
 <p>Usually programs are typed on computers with keyboards and usually programming languages are made up of those keyboard characters.</p>
 

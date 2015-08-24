@@ -1,8 +1,6 @@
 $(document).ready(function() {
-// Interactive terminal elements
-/* Notes: This needs to be amalgamated into a class or object as the repetition in code is ridiculous */
 
-// keyboard press moves object
+// Robo Language 1.0
     $('#robo-button').click(function() {
         $('#robo').animate({top:'-=80px'},'slow');
         $('#robo').animate({top:'+=80px'},'slow');
@@ -10,6 +8,34 @@ $(document).ready(function() {
         $('#robo').animate({left:'-=80px'},'slow');
     });
 
+// Level 1
+    $("#level1up").click(function() {
+        $(".list").append('<img id="up" src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_step_forward.png" alt="go_1.0_step_forward">');
+    });
+    $(document).on("click", "#up", function() {
+        $(this).remove();
+    });
+    $("#level1down").click(function() {
+        $(".list").append('<img id="down" src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_step_backward.png" alt="go_1.0_step_backward">');
+    });
+    $(document).on("click", "#down", function() {
+        $(this).remove();
+    });
+    $("#level1right").click(function() {
+        $(".list").append('<img id="right" src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_turn_right.png" alt="go_1.0_turn_right">');
+    });
+    $(document).on("click", "#right", function() {
+        $(this).remove();
+    });
+    $("#level1left").click(function() {
+        $(".list").append('<img id="left" src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/update/images/ch1/go_1.0_turn_left.png" alt="go_1.0_turn_left">');
+    });
+    $(document).on("click", "#left", function() {
+        $(this).remove();
+    });
+
+// Interactive terminal elements
+/* Notes: This needs to be amalgamated into a class or object as the repetition in code is ridiculous */
     $('#code').hide();
     $('#run').click(function() {
         $('#code').fadeIn('slow');
@@ -29,9 +55,19 @@ $(document).ready(function() {
     $('#code2').hide();
     $('#run2').click(function() {
         $('#code2').fadeIn('slow');
+        $('#robo2').animate({left:'+=80px'},'slow');
+        $('#robo2').animate({top:'+=80px'},'slow');
+        $('#robo2').animate({top:'+=80px'},'slow');
+        $('#robo2').animate({top:'+=80px'},'slow');
+        $('#robo2').animate({left:'+=80px'},'slow');
     });
     $('#reset2').click(function() {
         $('#code2').fadeOut('fast');
+        $('#robo2').animate({left:'-=80px'},0);
+        $('#robo2').animate({top:'-=80px'},0);
+        $('#robo2').animate({top:'-=80px'},0);
+        $('#robo2').animate({top:'-=80px'},0);
+        $('#robo2').animate({left:'-=80px'},0);
     });
 
     $('#code3').hide();
