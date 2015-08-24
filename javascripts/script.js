@@ -2,6 +2,14 @@ $(document).ready(function() {
 // Interactive terminal elements
 /* Notes: This needs to be amalgamated into a class or object as the repetition in code is ridiculous */
 
+// keyboard press moves object
+    $('#robo-button').click(function() {
+        $('#robo').animate({top:'-=80px'},'slow');
+        $('#robo').animate({top:'+=80px'},'slow');
+        $('#robo').animate({left:'+=80px'},'slow');
+        $('#robo').animate({left:'-=80px'},'slow');
+    });
+
     $('#code').hide();
     $('#run').click(function() {
         $('#code').fadeIn('slow');

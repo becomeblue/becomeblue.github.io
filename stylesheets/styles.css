@@ -95,6 +95,12 @@ img {
   max-width:100%;
 }
 
+#robo {
+    height: 80px;
+    width: 80px;
+    position: relative;
+}
+
 header {
   width:270px;
   float:left;
