@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>COMPSCI 101</title>
-
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type='text/javascript' src='javascripts/script.js'></script>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -16,10 +17,10 @@
     <div class="wrapper">
       <header>
         <h1><a href="http://www.compsci.nz">COMPSCI 101</a></h1>
-        <h2>The Website</h2>
+        <h3>The Website</h3>
         <p>Introduction to Computers and Programming (Version 0.4 Alpha)</p>
         <p class="view"><a href="#go">Go!</a></p>
-        <p class="view"><a href="#whats-in-the-course">What's in the Course</a></p>
+        <p class="view"><a href="#course-contents">Course Contents</a></p>
         <p class="view"><a href="#thinking-like-a-computer">Thinking Like a Computer</a></p>
         <p class="view"><a href="#looking-inside-a-computer">Looking Inside a Computer</a></p>
         <p class="view"><a href="#using-a-computer">Using a Computer</a></p>
@@ -29,105 +30,150 @@
         <h2>
 <a id="go" class="anchor" href="#go" aria-hidden="true"><span class="octicon octicon-link"></span></a>Go!</h2>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_robo.png" alt="go_robo"></p>
-
 <p>Here is Robo, maybe we will build him one day.</p>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_hardware.png" alt="go_hardware"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_robo.png" alt="go_robo"><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_hardware.png" alt="go_hardware"></p>
 
-<p>He has a central processing unit somewhere inside his head that reads computer programs and runs them, and some flash memory where all of the computer programs are stored.</p>
+<p>Robo has a central processing unit inside his head that reads computer programs and runs them - we call this a CPU. And he has some flash memory which is where all of those computer programs are stored.</p>
 
-<pre><code>$ check hardware
-Checking hardware...
-CPU installed
-Flash Memory installed
-Everything is OK!
+<blockquote>
+Check Robo's hardware by entering the command below
+</blockquote>
+<br>
+
+<pre><code>
+<div>$ check hardware</div>
+<div id='code'>Checking hardware...<br>CPU installed<br>Flash Memory installed<br>Everything is OK!</div>
 </code></pre>
+<button id='run'><strong>Enter Command</strong></button>
+<button id='reset'><strong>Reset</strong></button>
+<br><br>
 
-<p>This is the terminal where we enter our commands and communicate with Robo.</p>
+<p>This is what we call a terminal or command prompt. It is where we can enter commands on our computer and send them over to Robo. We type our command after the dollar sign and press enter to make it run. In this course we have buttons to help us do that.</p>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_speak.png" alt="go_speak"></p>
+<p style="text-align:center"><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_speak.png" alt="go_speak"></p>
 
-<p>He doesn't understand the language we speak, he only understands Robo Language 1.0, which is installed in the flash memory.</p>
+<p>Robo cannot understand the language we speak, he only understands Robo Language. Robo Language is software installed on Robo's flash memory, and the version Robo is currently using is Robo Language 1.0. It looks like this: </p>
 
-<p>Robo Language 1.0 looks like this:</p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_1.0_code.png" alt="go_1.0_code"></p>
+<button id='run0'><strong>Run Code</strong></button>
+<button id='reset0'><strong>Reset</strong></button>
+<br><br>
+
+<p>When we run the code from Robo Language 1.0 and watch how Robo moves we can see that each symbol is an instruction that Robo follows.
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_1.0.png" alt="go_1.0"></p>
 
-<p>We can write a program using the arrows as our code to move Robo.</p>
+<p>We can write a computer program to move Robo. This computer program only needs to contain the symbols (code) from Robo Language 1.0 in the order that we want Robo to move in. The software installed on Robo will read this code and Robo will follow our instructions.</p>
+
+<p>Our program needs to be saved into a file ending with <code>.bot</code>. This tells the software on Robo that our file is a set of instructions meant for Robo.
+
+<blockquote>
+<p>Write a computer program called <code>move.bot</code> to get Robo from where he is standing to where we want him to go.
+</blockquote>
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_level1.png" alt="go_level1"></p>
 
-<blockquote>
-<p>Write a move.bot program, upload it to Robo and then run the program.</p>
-</blockquote>
-
-<pre><code>Uploading program move.bot to Flash Memory
-
-Reading program move.bot from Flash Memory
-Running program move.bot
+<pre><code>
+<div>$ upload move.bot</div>
+<div id='code1'>Uploading program move.bot to Flash Memory...<br>Upload complete!</div>
 </code></pre>
+<button id='run1'><strong>Enter Command</strong></button>
+<button id='reset1'><strong>Reset</strong></button>
+<br><br>
+
+<pre><code>
+<div>$ run move.bot</div>
+<div id='code2'>Reading program move.bot from Flash Memory...<br>Running program move.bot<br></div>
+</code></pre>
+<button id='run2'><strong>Enter Command</strong></button>
+<button id='reset2'><strong>Reset</strong></button>
+<br><br>
 
 <p>Usually programs are typed on computers with keyboards and usually programming languages are made up of those keyboard characters.</p>
 
-<p>Let's update our software to Robo Language 2.0 using the terminal.</p>
+<blockquote>Update Robo's software to Robo Language 2.0 using the terminal.</blockquote>
+<br>
 
-<pre><code>$ update robo-lang
-Updating robo-lang to version 2.0
-Update complete!
+<pre><code>
+<div>$ update robo-lang</div>
+<div id='code3'>Updating robo-lang to version 2.0...<br>Update complete!</div>
 </code></pre>
+<button id='run3'><strong>Enter Command</strong></button>
+<button id='reset3'><strong>Reset</strong></button>
+<br><br>
 
 <p>Robo Language 2.0 looks like this:</p>
 
-<pre><code>step 2          // step forward two spaces
-turn right      // turn right 90 degrees
+<pre><code>step 2
+step -1
+turn right
+turn left
+</code></pre>
+<button id='run0'><strong>Run Code</strong></button>
+<button id='reset0'><strong>Reset</strong></button>
+<br><br>
+
+<p>When we run the code from Robo Language 2.0 and watch how Robo moves we can see that each line of code is a complete instruction that Robo follows. <code>step</code> followed by a number moves Robo by that many spaces, which could be forward or back. <code>turn</code> followed by left or right spins Robo 90 degrees in a clockwise or anti-clockwise direction.
+
+<pre><code>step 2          // move forward two spaces
+step -1         // move backward one space
+turn right      // turn 90 degrees clockwise
+turn left       // turn 90 degrees anti-clockwise
 </code></pre>
 
-<p>Let's program Robo to get back to the start.</p>
+<p> Two slashes (<code>//</code>) indicates a comment. Comments are not seen as code and do not get run as part of a computer program - they are used by programmers to write notes, often explaining what the code does.
+
+<blockquote>Write a program called move.bot using Robo Language 2.0 to get Robo back to where he started.</blockquote>
+<br>
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_level2.png" alt="go_level2"></p>
 
-<pre><code>$ upload move.bot
-Uploading program move.bot to Flash Memory
-
-$ run move.bot
-Reading program move.bot from Flash Memory
-Running program move.bot
+<pre><code>
+<div>$ upload move.bot</div>
+<div id='code4'>Uploading program move.bot to Flash Memory<br>$ run move.bot<br>Reading program move.bot from Flash Memory<br>Running program move.bot</div>
 </code></pre>
+<button id='run4'><strong>Run Code</strong></button>
+<button id='reset4'><strong>Reset Code</strong></button>
+<br><br>
 
 <p>Let's get ready for the next course.</p>
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_level3.png" alt="go_level3"></p>
 
-<p>A big crack has appeared in Robo's path! But we do not have an instruction that can get him over it. In programming you can code new ways to do things. What we need is more control over Robo.</p>
+<p>A big crack has appeared in Robo's path, but we do not have an instruction that can get him over it! In programming you can code new ways to do things. What we need is more control over Robo.</p>
 
-<pre><code>$ update robo-lang
-Updating robo-lang to version 3.0
-Update complete!
+<pre><code>
+<div>$ update robo-lang</div>
+<div id='code5'>Updating robo-lang to version 3.0<br>Update complete!</div>
 </code></pre>
+<button id='run5'><strong>Run Code</strong></button>
+<button id='reset5'><strong>Reset Code</strong></button>
+<br><br>
 
 <p>Robo Language 3.0 looks like this:</p>
 
-<pre><code>// Importing Robo Language 3.0 function which jumps Robo over one space
+<pre><code>// Importing Robo Language 3.0 function which
+// jumps Robo over one space
 import legs.jump
 
-jump() :           // New jump function
+jump() :            // New jump function
   legs.jump()
 
-jump()             // Using jump function
-step(2)
-turn(90)
+jump()              // jump over one space
+step(2)             // step forward two spaces
+turn(90)            // turn 90 degrees clockwise
 </code></pre>
 
 <p><br></p>
 
-<pre><code>$ upload move.bot
-Uploading program move.bot to Flash Memory
-
-$ run move.bot
-Reading program move.bot from Flash Memory
-Running program move.bot
+<pre><code>
+<div>$ upload move.bot</div>
+<div id='code6'>Uploading program move.bot to Flash Memory<br>$ run move.bot<br>Reading program move.bot from Flash Memory<br>Running program move.bot</div>
 </code></pre>
+<button id='run6'><strong>Run Code</strong></button>
+<button id='reset6'><strong>Reset Code</strong></button>
+<br><br>
 
 <p>Robo was taking awhile to process our new instructions. It is time we upgraded his hardware.</p>
 
@@ -139,18 +185,21 @@ Running program move.bot
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_hardware_ram.png" alt="go_hardware_ram"></p>
 
-<pre><code>$ check hardware
-Checking hardware...
-CPU installed
-Flash Memory installed
-RAM installed
-Everything is OK!
-
-$ run move.bot
-Copying program move.bot from Flash Memory to RAM
-Reading program move.bot from RAM
-Running program move.bot
+<pre><code>
+<div>$ check hardware</div>
+<div id='code7'>Checking hardware...<br>CPU installed<br>Flash Memory installed<br>RAM installed<br>Everything is OK!</div>
 </code></pre>
+<button id='run7'><strong>Run Code</strong></button>
+<button id='reset7'><strong>Reset Code</strong></button>
+<br><br>
+
+<pre><code>
+<div>$ run move.bot</div>
+<div id='code8'>Copying program move.bot from Flash Memory to RAM<br>Reading program move.bot from RAM<br>Running program move.bot</div>
+</code></pre>
+<button id='run8'><strong>Run Code</strong></button>
+<button id='reset8'><strong>Reset Code</strong></button>
+<br><br>
 
 <p>We are ready to begin COMPSCI 101 and learn to...</p>
 
@@ -160,11 +209,13 @@ Running program move.bot
 
 <p>To stop somebody else programming Robo we need security.</p>
 
-<pre><code>$ set password
-Enter Password:
-Confirm Password:
-Password Set!
+<pre><code>
+<div>$ set password</div>
+<div id='code9'>Enter Password:<br>Confirm Password:<br>Password Set!</div>
 </code></pre>
+<button id='run9'><strong>Run Code</strong></button>
+<button id='reset9'><strong>Reset Code</strong></button>
+<br><br>
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_hacker_no.png" alt="go_hacker_no"></p>
 
@@ -173,15 +224,15 @@ Password Set!
 <p>Good, now we have had a taste of what this course is all about. Let's move on.</p>
 
 <h2>
-<a id="whats-in-the-course" class="anchor" href="#whats-in-the-course" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's in the Course</h2>
+<a id="course-contents" class="anchor" href="#course-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Course Contents</h2>
 
-<p>We are going to be <strong>thinking like a computer</strong>. That is more of what we have been doing so far with Robo Language 1.0 and also looking at binary 1010 0110, no it is not the Matrix but how computers understand.</p>
+<p>We are going to be <strong>thinking like a computer</strong>. That is more of what we have been doing so far with Robo Language 1.0 and also looking at binary 1010 0110 - how computers understand.</p>
 
 <p>We are going to be taking a <strong>look inside computers</strong>. That is adding to our list of hardware: CPU, flash memory, RAM, hard drive, disk drive, power supply and more.</p>
 
 <p>We are going to be <strong>using any computer</strong> in front of us. That is navigating an operating system, learning how to use our software, understanding the magic behind files and getting down and dirty with the command line.</p>
 
-<p>We are going to be <strong>programming</strong>. First learning the basics with Robo Language 2.0 and then delving into the programming languages of games, the web, and electronics - we will do it all while coding our own calculator, games, website and by blinking some LEDs.</p>
+<p>We are going to be <strong>programming</strong>. First learning the basics with Robo Language 2.0 and then delving into the programming languages of games, the web, and electronics - we will do it all while coding our own calculator, game, website and by blinking some LEDs.</p>
 
 <p>We are going to be taking our <strong>security and privacy</strong> seriously. That is creating strong passwords, deciding what information to share online and looking at the realities of the internet.</p>
 
@@ -202,7 +253,7 @@ Password Set!
 
 <p>Ouch! Sorry Robo. We need to be careful with our instructions.</p>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/go_1.0.png" alt="go_1.0"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_1.0.png" alt="go_1.0"></p>
 
 <p>These instructions we are writing are part of Robo Language 1.0. Robo Language 1.0 is a complete set of instructions that Robo understands. We will learn more of the set as we go.</p>
 
@@ -234,9 +285,9 @@ Password Set!
 
 <p>So how does this explain how a computer thinks because they can do a lot more than just turn on and off? That's true and it is because of a lot of offs and ons. Let's start with what one on/off looks like and build up.</p>
 
-<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_binary.png" alt="think_binary_light"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_binary_light.png" alt="think_binary_light"></p>
 
-<p>A light switch is the best on/off example to look at and is literally on and off. When the switch is in the off position there is a space between two bits of metal and no electricity can flow in the circuit, so a dark room for us. When the switch is flicked on the two bits of metal touch, electricity begins to flow and we can see.</p>
+<p>A light switch is the best on/off example to look at and is literally on and off. When the switch is in the off position there is a space between two bits of metal and no electricity can flow in the circuit, and we have a dark room. When the switch is flicked on the two bits of metal touch, electricity begins to flow and we can see.</p>
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch3/think_binary_3light.png" alt="think_binary_3light"></p>
 
@@ -330,13 +381,13 @@ Password Set!
 
 <p>We are now going to take a look at what these parts can do for a computer by installing more hardware into Robo.</p>
 
-<pre><code>$ check hardware
-Checking hardware...
-CPU installed
-Flash Memory installed
-RAM installed
-Everything is OK!
+<pre><code>
+<div>$ check hardware</div>
+<div id='code10'>Checking hardware...<br>CPU installed<br>Flash Memory installed<br>RAM installed<br>Everything is OK!</div>
 </code></pre>
+<button id='run10'><strong>Run Code</strong></button>
+<button id='reset10'><strong>Reset Code</strong></button>
+<br><br>
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_hardware_ram.png" alt="go_hardware_ram"></p>
 
@@ -348,14 +399,21 @@ Everything is OK!
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch4/inside_hardware_hdd.png" alt="inside_hardware_hdd"></p>
 
-<pre><code>$ copy Flash memory to Hard Drive
-Copying data...
-Complete!
-
-$ erase Flash Memory
-Erasing data...
-Complete!
+<pre><code>
+<div>$ copy Flash memory to Hard Drive</div>
+<div id='code11'>Copying data...<br>Complete!!</div>
 </code></pre>
+<button id='run11'><strong>Run Code</strong></button>
+<button id='reset11'><strong>Reset Code</strong></button>
+<br><br>
+
+<pre><code>
+<div>$ erase Flash Memory</div>
+<div id='code12'>Erasing data...<br>Complete!!</div>
+</code></pre>
+<button id='run12'><strong>Run Code</strong></button>
+<button id='reset12'><strong>Reset Code</strong></button>
+<br><br>
 
 <p>We will use the flash memory for something else later.</p>
 
@@ -365,15 +423,13 @@ Complete!
 
 <p>Now that we have put a power supply into Robo, anytime we want to charge him up we just plug him into the wall. What is important to know is that we need a power supply to convert the voltage amount from the wall into lower voltages that our computer parts run on - otherwise things would be melting, burning and possibly blowing up.</p>
 
-<pre><code>$ check hardware
-Checking hardware...
-CPU installed
-Flash Memory installed
-RAM installed
-Hard Drive installed
-Power Supply installed
-Everything is OK!
+<pre><code>
+<div>$ check hardware</div>
+<div id='code13'>Checking hardware...<br>CPU installed<br>Flash Memory installed<br>RAM installed<br>Hard Drive installed<br>Power Supply installed<br>Everything is OK!</div>
 </code></pre>
+<button id='run13'><strong>Run Code</strong></button>
+<button id='reset13'><strong>Reset Code</strong></button>
+<br><br>
 
 <p>To tie this chapter on hardware to the binary we learnt about earlier we are going to talk about CDs and DVDs.</p>
 
@@ -408,10 +464,13 @@ Everything is OK!
 
 <p>That first budget looking part is the BIOS. It is a kind of software called firmware that checks hardware and gets it ready to go. It is the first piece of software to run and usually is stored on flash memory. Didn't Robo have some free flash memory?</p>
 
-<pre><code>$ write BIOS to Flash Memory
-Writing data...
-Complete!
+<pre><code>
+<div>$ write BIOS to Flash Memory</div>
+<div id='code14'>Writing data...<br>Complete!!</div>
 </code></pre>
+<button id='run14'><strong>Run Code</strong></button>
+<button id='reset14'><strong>Reset Code</strong></button>
+<br><br>
 
 <p>Now that Robo has a BIOS we can plug him into a screen and something will show up.</p>
 
@@ -423,14 +482,13 @@ Complete!
 
 <p>An OS is all of that software we know and love. Windows, OS X and Linux are all popular operating systems. The second job of the BIOS is to run the OS which is usually stored on a hard drive. We need to install an OS on Robo's hard drive.</p>
 
-<pre><code>$ install OSRobo
-Warning: This will erase everything on the hard drive
-Do you wish to continue? Yes
-Installing OS...
-Complete!
-
-Rebooting Robo...
+<pre><code>
+<div>$ install OSRobo</div>
+<div id='code15'>Warning: This will erase everything on the hard drive<br>Do you wish to continue? Yes<br>Installing OS...<br>Complete!<br><br>Rebooting Robo...</div>
 </code></pre>
+<button id='run15'><strong>Run Code</strong></button>
+<button id='reset15'><strong>Reset Code</strong></button>
+<br><br>
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_bios.png" alt="using_bios"></p>
 
@@ -438,7 +496,7 @@ Rebooting Robo...
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_bios_os.png" alt="using_bios_os"></p>
 
-<p><img alt="using_os"></p>
+<p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os.png" alt="using_os"></p>
 
 <p>This is the desktop of OSRobo. It has a few good programs already on it: a file manager, web browser, text editor and terminal.</p>
 
@@ -458,9 +516,13 @@ Rebooting Robo...
 
 <p>The <code>ls</code> command lists the contents of the directory.</p>
 
-<pre><code>$ ls
-System Home Boot
+<pre><code>
+<div>$ ls</div>
+<div id='code16'>System Home Boot</div>
 </code></pre>
+<button id='run16'><strong>Run Code</strong></button>
+<button id='reset16'><strong>Reset Code</strong></button>
+<br><br>
 
 <p>These are the folders we saw before in our file manager. Folders are also called directories. Right now we are in the root directory which if we imagine everything as a tree, we are at the lowest root where everything else will branch out from.</p>
 
@@ -468,38 +530,53 @@ System Home Boot
 
 <p>The <code>cd</code> command changes into the a directory of our choosing.</p>
 
-<pre><code>$ cd Home
-$ ls
-Documents Pictures Videos
+<pre><code>
+<div>$ cd Home</div>
+<div id='code17'>$ ls<br>Documents Pictures Videos</div>
 </code></pre>
+<button id='run17'><strong>Run Code</strong></button>
+<button id='reset17'><strong>Reset Code</strong></button>
+<br><br>
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_tree_home.png" alt="using_tree_home"></p>
 
-<pre><code>$ cd Documents
-$ ls
+<pre><code>
+<div>$ cd Documents</div>
+<div id='code18'>$ ls</div>
 </code></pre>
+<button id='run18'><strong>Run Code</strong></button>
+<button id='reset18'><strong>Reset Code</strong></button>
+<br><br>
 
 <p>When nothing happens with <code>ls</code> it means the directory is empty.</p>
 
-<pre><code>$ edit text.txt
--------------------------
-editor: press Esc to save
--------------------------
+<pre><code>
+<div>$ edit text.txt</div>
+<div id='code19'>-------------------------<br>editor: press Esc to save<br>-------------------------</div>
 </code></pre>
+<button id='run19'><strong>Run Code</strong></button>
+<button id='reset19'><strong>Reset Code</strong></button>
+<br><br>
 
 <p>We just ran the text editor program <code>edit</code> and created a new text file <code>text.txt</code>.</p>
 
-<pre><code>-------------------------
-editor: press Esc to save
--------------------------
-Hello World
+<pre><code>
+<div>-------------------------<br>editor: press Esc to save<br>-------------------------</div>
+<div id='code20'>Hello World</div>
 </code></pre>
+<button id='run20'><strong>Run Code</strong></button>
+<button id='reset20'><strong>Reset Code</strong></button>
+<br><br>
 
 <p><br></p>
 
-<pre><code>$ ls
-text.txt
+<pre><code>
+<div>$ ls</div>
+<div id='code21'>text.txt</div>
 </code></pre>
+<button id='run21'><strong>Run Code</strong></button>
+<button id='reset21'><strong>Reset Code</strong></button>
+<br><br>
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_tree_text.png" alt="using_tree_text"></p>
 
@@ -531,9 +608,15 @@ Document Pictures Videos
 $ cd Documents
 $ ls
 text.txt
-$ del text.txt
-$ ls
 </code></pre>
+
+<pre><code>
+<div>$ del text.txt</div>
+<div id='code22'>$ ls</div>
+</code></pre>
+<button id='run22'><strong>Run Code</strong></button>
+<button id='reset22'><strong>Reset Code</strong></button>
+<br><br>
 
 <p>We deleted our file and now have an empty directory again.</p>
 
@@ -543,23 +626,27 @@ $ ls
 
 <p>Let's do something cool with a file.</p>
 
-<pre><code>$ edit hello.html
--------------------------
-editor: press Esc to save
--------------------------
-&lt;!DOCTYPE html&gt;
-&lt;body&gt;My web page!&lt;/body&gt;
+<pre><code>
+<div>$ edit hello.html</div>
+<div id='code23'>-------------------------<br>editor: press Esc to save<br>-------------------------<br>&lt;!DOCTYPE html&gt;<br>&lt;body&gt;My web page!&lt;/body&gt;</div>
 </code></pre>
+<button id='run23'><strong>Run Code</strong></button>
+<button id='reset23'><strong>Reset Code</strong></button>
+<br><br>
 
 <p>An HTML file is what a web browser reads and ends in .html. HTML is a markup language used to create web pages that we are going to learn a lot about later. We just wrote a very basic HTML file.</p>
 
-<pre><code>$ browser hello.html
-Runnning browser software...
+<pre><code>
+<div>$ browser hello.html</div>
+<div id='code24'>Runnning browser software...</div>
 </code></pre>
+<button id='run24'><strong>Run Code</strong></button>
+<button id='reset24'><strong>Reset Code</strong></button>
+<br><br>
 
 <p><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch5/using_os_browser.png" alt="using_os_browser"></p>
 
-<p>That is our web page! It only exists locally on Robo right now. It will take a bit more to get in online but it is a great start.</p>
+<p>That is our web page! It only exists locally on Robo right now. It will take a bit more to get it online but it is a great start.</p>
 
 <p>Good, now we know about software from boot up to desktop. Let's move on.</p>
 
@@ -586,9 +673,9 @@ Runnning browser software...
 
 <p>Instead we will head over to CodeMonkey (<a href="http://www.playcodemonkey.com">http://www.playcodemonkey.com</a>) and work through the first 30 levels included in their free trial. CodeMonkey is a web application that uses CoffeeScript - an easy-to-use language that compiles to Javascript, the language of the web. We will learn the basics there.</p>
 
-<p>Then we will sign up for Codecademy (<a href="http://www.codecademy.com">http://www.codecademy.com</a>) and begin to work through their language introductory courses. We will learn the basics of some very popular programming langauges and skills: Python, HTML/CSS, JavaScript, Command Line.</p>
+<p>Then we will sign up for Codecademy (<a href="http://www.codecademy.com">http://www.codecademy.com</a>) and begin to work through their language introductory courses. We will learn the basics of some very popular programming languages and skills: Python, HTML/CSS, JavaScript, Command Line.</p>
 
-<p>This will set us up well for this different programming tasks, including:</p>
+<p>This will set us up well for different programming tasks, including:</p>
 
 <ul>
 <li>Create a Q&amp;A machine that takes user input and gives information back.</li>
@@ -600,7 +687,7 @@ Runnning browser software...
 </ul>
       </section>
       <footer>
-        <p><small>© 2015 Aaron Haines. This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></small></p>
+        <p><small>© 2015 Aaron Haines. This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 License</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
