@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>COMPSCI 101</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type='text/javascript' src='javascripts/script.js'></script>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://www.compsci.nz">COMPSCI 101</a></h1>
+        <p>Introduction to Computers and Programming (Version 0.4.2 Alpha)</p>
+        <p class="view"><a href="http://www.compsci.nz">Return to Main Course...</a>
+        <p class="view"><a href="#hello">Hello Arduino</a><br><a href="#morse">Morse Code</a></p>
+        <p class="view"><a href="http://www.compsci.nz/arduino-ide">IDE</a><br><a href="http://www.compsci.nz/arduino-ide#cheatsheet">Cheatsheet</a></p>
+      </header>
+      <section>
+
+<h2><a id="hello" class="anchor" href="#hello" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hello Arduino</h2>
+
+<p>An Arduino is a microcontroller board that can be programmed from a computer and used to control lights, sensors, motors, speakers and more. A microcontroller is a small computer on one single chip (sometimes called a microchip). The microcontroller of an Arduino has a CPU, RAM, storage memory, and a bunch of input/output ports on it.</p>
+
+<!--<p style="text-align:center"><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/arduino/hello_uno.jpg" alt="hello_uno"></p>-->
+<p style="text-align:center"><img src="file:///E:/aaron/Code/GitHub/compscinz/images/arduino/arduino_uno.jpg" alt="hello_uno"></p>
+
+<p>With details out of the way we can begin to use an Arduino very quickly. The board plugs into a computer via USB, and once drivers are installed, we can upload and run code on our Arduino.</p>
+
+<blockquote>Run the code below on your Arduino</blockquote>
+
+<iframe style="height: 510px; width: 100%; margin: 10px 0 10px;" allowTransparency="true" src="https://codebender.cc/embed/sketch:146011" frameborder="0"></iframe>
+
+<p>The LED on the Arduino blinks! And we say hello to the world of physical computing - where code meets the real world.</p>
+
+<p>An Arduino program is called a sketch. Sketch is the name given to programs written using the <a href="https://www.arduino.cc/en/Main/Software">Arduino software</a>, which is basically coding in a language called C++, but with some extra features that were developed for use with an Arduino compatible board.</p>
+
+<p style="text-align:center"><img src="file:///E:/aaron/Code/GitHub/compscinz/images/arduino/arduino_ide.png" alt="hello_ide"></p>
+
+<p>With the Arduino software we can write sketches and upload code offline, use example code to learn the basics, and add extra libraries or build our own.</p>
+
+<p>We are now going to look at the code that made up our Blink101 sketch from before.</p>
+
+<blockquote>Run the sketch below to turn your LED off</blockquote>
+
+<iframe style="height: 510px; width: 100%; margin: 10px 0 10px;" allowTransparency="true" src="https://codebender.cc/embed/sketch:146012" frameborder="0"></iframe>
+
+<p>Below is the bare minimum code you would have in an Arduino sketch.</p>
+
+<pre><code>void setup() {
+}
+
+void loop() {
+}
+</code></pre>
+
+<p>To begin, every Arduino sketch has atleast these two parts, a setup and a loop. These are both functions, which means there will be code inside of them that will get run. Without getting too much into the details of C++, <code>void</code> means nothing will be coming back out of the function, the brackets <code>()</code> are empty because nothing is being given to the function, and all the code we will write will be going between the curly braces <code>{}</code>. Two slashes <code>//</code> will indicate a comment. C++ code could be written all on a single line, but we lay it out this way to make it easy to read.</p>
+
+<pre><code>void setup() {
+    // code in here will be run once
+}
+
+void loop() {
+    // code in here will be run over and over
+}
+</code></pre>
+
+<p>The <code>setup</code> will run once at the beginning, this is where we put the code that sets things up for the loop. The <code>loop</code> will then run over and over and is where we will be putting most of our code. Inside both functions all of our code will be indented by one tab.
+
+<p>If we wanted to setup our LED to begin on we would do this:
+
+<pre><code>void setup() {
+    pinMode(13, OUTPUT);
+    digitalWrite(13, HIGH);
+}
+
+void loop() {
+}
+</code></pre>
+
+<p>If we break this down, <code>pinMode(13, OUTPUT)</code> is setting our number 13 pin, the one connected to our LED, to be an output for electrical current. This means that is can now be turned on and off. <code>digitalWrite(13, HIGH)</code> is setting pin 13 to be at its highest possible voltage, and therefore our LED will receive an electrical current and light up. The opposite of writing HIGH is LOW. Every line of code inside our functions must end in a semicolon <code>;</code>.</p>
+
+<blockquote>Try it for yourself</blockquote>
+
+<iframe style="height: 510px; width: 100%; margin: 10px 0 10px;" allowTransparency="true" src="https://codebender.cc/embed/sketch:145611" frameborder="0"></iframe>
+
+<p>This same sketch could be written like this:</p>
+
+<pre><code>int led = 13;
+
+void setup() {
+  pinMode(led, OUTPUT);
+  digitalWrite(led, HIGH);
+}
+
+void loop() {
+}
+</code></pre>
+
+<p>And this is the best way to do it. What we have done is create a variable called <code>led</code> that is equal to the integer 13. This is better because now we just have to write <code>led</code> each time we want to use pin 13 in our sketch. If we want to change the number of the pin we are using, we only need to change the variable at the top.</p>
+
+<p>What if we want to blink an LED?</p>
+
+<pre><code>int led = 13;
+
+void setup() {
+    pinMode(led, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(led, HIGH);
+    delay(1000);
+    digitalWrite(led, LOW);
+    delay(1000);
+}
+</code></pre>
+
+<p>Here we have opened up our loop and moved our <code>digitalWrite(led, HIGH)</code> inside it. We have added a <code>delay(1000)</code> to pause our program for one second (1000 miliseconds), then switched off the LED and delayed again.</p>
+
+<p>The code inside the loop will run over and over again forever (or until we unplug the Arduino) and we can see that it will turn on the LED for one second, then turn it off for one second, over and over again. Which is exactly what we wanted.</p>
+
+<blockquote>Can you guess what will happen in the sketch below? Think about it and then run the code.</blockquote>
+
+<iframe style="height: 510px; width: 100%; margin: 10px 0 10px;" allowTransparency="true" src="https://codebender.cc/embed/sketch:146017" frameborder="0"></iframe>
+
+<p>The LED blinks faster and faster until it stays on. The new variable <code>count</code> can be seen inside our delays and again at the bottom of the loop. If we talk about the first time the loop code is run, each delay runs for 500 miliseconds, then count is changed to be equal to itself (500) minus 10 (now 490). On the next loop each delay runs for 490 miliseconds, and so on. Something interesting happens at the end, but all we will say for now is that the LED appears to just stay on.</p>
+
+<h2><a id="morse" class="anchor" href="#morse" aria-hidden="true"><span class="octicon octicon-link"></span></a>Morse Code</h2>
+
+<p>Morse code is a method of sending text messages as a series of on and offs, and with practice can be understood without any equipment. The classic example of Morse code is SOS which is three short beeps or flashes of light, three long ones, then three short ones again.</p>
+
+<p>Another way of looking at Morse code is how it is written. In Morse code a short beep or flash is written and called a <code>dot</code> and a long one is a <code>dash</code>.</p>
+
+<p style="text-align:center"><img src="file:///E:/aaron/Code/GitHub/compscinz/images/arduino/arduino_morse.png" alt="hello_uno"></p>
+
+<blockquote>How would SOS be written?<br>Run the code below</blockquote>
+
+<iframe style="height: 550px; width: 100%; margin: 10px 0 10px;" allowTransparency="true" src="https://codebender.cc/embed/sketch:146019" frameborder="0"></iframe>
+
+<p>In the sketch we can see new stuff below our setup and loop. There are two new functions called <code>dot</code> and <code>dash</code>. Inside these functions is familiar code from before, blinking an LED. The dot function has a short delay, and dash a long - these are our short and long flashes in Morse code.</p>
+
+<p>What is interesting is our loop.</p>
+
+<pre><code>void loop() {
+  dot(); dot(); dot();
+  dash(); dash(); dash();
+  dot(); dot(); dot();
+  delay(3000);
+}
+</code></pre>
+
+<p>These are function calls. <code>dot()</code> calls the dot function from our sketch and runs the code in it once. Three dots being called is the letter S - we can see that the message being sent here is SOS.</p>
+
+<blockquote>Edit the code in the MorseCode sketch and send your own message</blockquote>
+<br>
+
+<p>Coding functions is a good way to simplify your code. Any time you start duplicating a lot of the same code, you should be using a function. The big realisation here is that when you upload and run code on your Arduino, <code>setup()</code> and <code>void()</code> are the first functions to run and are called automatically.</p>
+
+      </section>
+      <footer>
+        <p><small>© 2015 Aaron Haines. This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0 License</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
