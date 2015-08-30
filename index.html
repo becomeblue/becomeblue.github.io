@@ -1,11 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>COMPSCI 101</title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<<<<<<< HEAD
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+=======
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+>>>>>>> master
     <script type='text/javascript' src='javascripts/script.js'></script>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -18,6 +22,11 @@
     <div class="wrapper">
       <header>
         <h1><a href="http://www.compsci.nz">COMPSCI 101</a></h1>
+<<<<<<< HEAD
+        <p>Introduction to Computers and Programming (Version 0.4.2 Alpha)
+        <p class="view"><a href="#go">Go!</a><br><a href="#contents">Contents</a><br><a href="#thinking-like-a-computer">1. Thinking Like a Computer</a><br><a href="#looking-inside-a-computer">2. Inside a Computer</a><br><a href="#using-a-computer">3. Using a Computer</a><br><a href="#programming">4. Programming</a></p>
+        <p class="view"><a href="http://www.compsci.nz/arduino">Hello Arduino</a></p>
+=======
         <h3>The Website</h3>
         <p>Introduction to Computers and Programming (Version 0.4.1 Alpha)</p>
         <p class="view"><a href="#go">Go!</a></p>
@@ -26,8 +35,11 @@
         <p class="view"><a href="#looking-inside-a-computer">Looking Inside a Computer</a></p>
         <p class="view"><a href="#using-a-computer">Using a Computer</a></p>
         <p class="view"><a href="#programming">Programming</a></p>
+>>>>>>> master
       </header>
       <section>
+
+<!--Introduction: Go!-->
         <h2>
 <a id="go" class="anchor" href="#go" aria-hidden="true"><span class="octicon octicon-link"></span></a>Go!</h2>
 
@@ -38,23 +50,22 @@
 <p>Robo has a central processing unit inside his head that reads computer programs and runs them - we call this a CPU. And he has some flash memory which is where all of those computer programs are stored.</p>
 
 <blockquote>
-Check Robo's hardware by entering the command below
+Check Robo's hardware by clicking on <br><code>$ check hardware</code> below
 </blockquote>
 <br>
 
 <pre><code>
-<div>$ check hardware</div>
-<div id='code'>Checking hardware...<br>CPU installed<br>Flash Memory installed<br>Everything is OK!</div>
+    <div id="menu">
+        <div>$ check hardware</div>
+        <div>Checking hardware...<br>CPU installed<br>Flash Memory installed<br>Everything is OK!</div>
+    </div>
 </code></pre>
-<button id='run'><strong>Enter Command</strong></button>
-<button id='reset'><strong>Reset</strong></button>
-<br><br>
 
-<p>This is what we call a terminal or command prompt. It is where we can enter commands on our computer and send them over to Robo. We type our command after the dollar sign and press enter to make it run. In this course we have buttons to help us do that.</p>
+<p>This is what we call a terminal or command prompt. It is where we can enter commands on our computer and send them over to Robo. We type our command after the dollar sign and press enter to make it run. In this course we can click the command to help us do that.</p>
 
 <p style="text-align:center"><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_speak.png" alt="go_speak"></p>
 
-<p>Robo cannot understand the language we speak, he only understands Robo Language. Robo Language is software installed on Robo's flash memory, and the version Robo is currently using is Robo Language 1.0. Robo Language 1.0 looks like this: </p>
+<p>Robo cannot understand the language we speak, he only understands Robo Language. Robo Language is software installed on Robo's flash memory, and the version Robo is currently using is Robo Language 1.0. Robo Language 1.0 looks like this:</p>
 
 <table style="width:100%">
    <tr>
@@ -89,9 +100,13 @@ Check Robo's hardware by entering the command below
 
 <p>Our program needs to be saved into a file ending with <code>.bot</code>. This tells the software on Robo that our file is a set of instructions meant for Robo.
 
+<<<<<<< HEAD
+<div style="position: relative; left: 0; top: 0;"><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_level1.png" alt="go_level1" style="position: relative; top: 0; left: 0;"/><img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_robo.png" alt="go_robo" style="position: absolute; top: 0px; left: 0px; height:60px; width:60px;"/>
+=======
 <div style="position: relative; left: 0; top: 0;">
     <img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_level1.png" alt="go_level1" style="position: relative; top: 0; left: 0;"/>
     <img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_robo.png" alt="go_robo" style="position: absolute; top: 0px; left: 0px; height:60px; width:60px;"/>
+>>>>>>> master
 </div>
 
 <blockquote>
@@ -116,20 +131,16 @@ Check Robo's hardware by entering the command below
 <div class="list"></div>
 
 <pre><code>
-<div>$ upload move.bot</div>
-<div id='code1'>Uploading program move.bot to Flash Memory...<br>Upload complete!</div>
-</code></pre>
-<button id='run1'><strong>Enter Command</strong></button>
-<button id='reset1'><strong>Reset</strong></button>
-<br><br>
+    <div id="menu1">
+        <div>$ upload move.bot</div>
+        <div>Uploading program move.bot to Flash Memory...<br>Upload complete!</div>
+    </div>
 
-<pre><code>
-<div>$ run move.bot</div>
-<div id='code2'>Reading program move.bot from Flash Memory...<br>Running program move.bot<br></div>
+    <div id="menu2">
+        <div>$ run move.bot</div>
+        <div>Reading program move.bot from Flash Memory...<br>Running program move.bot</div>
+    </div>
 </code></pre>
-<button id='run2'><strong>Enter Command</strong></button>
-<button id='reset2'><strong>Reset</strong></button>
-<br><br>
 
 <div style="position: relative; left: 0; top: 0;">
   <img src="https://raw.githubusercontent.com/compscinz/compscinz.github.io/master/images/ch1/go_level1.png" alt="go_level1" style="position: relative; top: 0; left: 0;"/>
@@ -161,7 +172,7 @@ turn left
 <button id='reset0'><strong>Reset</strong></button>
 <br><br>
 
-<p>When we run the code from Robo Language 2.0 and watch how Robo moves we can see that each line of code is a complete instruction that Robo follows. <code>step</code> followed by a number moves Robo by that many spaces, which could be forward or back. <code>turn</code> followed by left or right spins Robo 90 degrees in a clockwise or anti-clockwise direction.
+<p>When we run the code from Robo Language 2.0 and watch how Robo moves we can see that each line of code is a complete instruction that Robo follows. <code>step</code> followed by a number moves Robo by that many spaces, which could be forward or back. <code>turn</code> followed by left or right spins Robo 90 degrees in a clockwise or anti-clockwise direction.</p>
 
 <pre><code>step 2          // move forward two spaces
 step -1         // move backward one space
@@ -270,23 +281,25 @@ turn(90)            // turn 90 degrees clockwise
 
 <p>Good, now we have had a taste of what this course is all about. Let's move on.</p>
 
+<!--Contents-->
 <h2>
-<a id="course-contents" class="anchor" href="#course-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Course Contents</h2>
+<a id="contents" class="anchor" href="#contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contents</h2>
 
-<p>We are going to be <strong>thinking like a computer</strong>. That is more of what we have been doing so far with Robo Language 1.0 and also looking at binary 1010 0110 - how computers understand.</p>
+<p>We are going to be <code>thinking like a computer</code>. That is more of what we have been doing so far with Robo Language 1.0 and also looking at binary 1010 0110 - how computers understand.</p>
 
-<p>We are going to be taking a <strong>look inside computers</strong>. That is adding to our list of hardware: CPU, flash memory, RAM, hard drive, disk drive, power supply and more.</p>
+<p>We are going to be taking a look <code>inside computers</code>. That is adding to our list of hardware: CPU, flash memory, RAM, hard drive, disk drive, power supply and more.</p>
 
-<p>We are going to be <strong>using any computer</strong> in front of us. That is navigating an operating system, learning how to use our software, understanding the magic behind files and getting down and dirty with the command line.</p>
+<p>We are going to be <code>using any computer</code> in front of us. That is navigating an operating system, learning how to use our software, understanding the magic behind files and getting down and dirty with the command line.</p>
 
-<p>We are going to be <strong>programming</strong>. First learning the basics with Robo Language 2.0 and then delving into the programming languages of games, the web, and electronics - we will do it all while coding our own calculator, game, website and by blinking some LEDs.</p>
+<p>We are going to be <code>programming</code>. First learning the basics with Robo Language 2.0 and then delving into the programming languages of games, the web, and electronics - we will do it all while coding our own calculator, game, website and by blinking some LEDs.</p>
 
-<p>We are going to be taking our <strong>security and privacy</strong> seriously. That is creating strong passwords, deciding what information to share online and looking at the realities of the internet.</p>
+<p>We are going to be taking our <code>security and privacy</code> seriously. That is creating strong passwords, deciding what information to share online and looking at the realities of the internet.</p>
 
-<p>Finally we will discuss <strong>copyright and ethics</strong> in computing and decide on the kind of world we want to live and code in.</p>
+<p>Finally we will discuss <code>copyright and ethics</code> in computing and decide on the kind of world we want to live and code in.</p>
 
 <p>Good, now we have an idea of what is to come in this course. Let's move on.</p>
 
+<!--Chapter 1: Thinking Like a Computer-->
 <h2>
 <a id="thinking-like-a-computer" class="anchor" href="#thinking-like-a-computer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thinking Like a Computer</h2>
 
@@ -399,8 +412,9 @@ turn(90)            // turn 90 degrees clockwise
 
 <p>Good, now we know a computer is perfect and thinks nothing like us. Let's move on.</p>
 
+<!--Chapter 2: Inside a Computer-->
 <h2>
-<a id="looking-inside-a-computer" class="anchor" href="#looking-inside-a-computer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Looking Inside a Computer</h2>
+<a id="inside-a-computer" class="anchor" href="#inside-a-computer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inside a Computer</h2>
 
 <p>A computer has stuff inside it and that stuff is called hardware. Is it hardware because it is hard, maybe. And it doesn't matter what computer you look inside because they all have something in common.</p>
 
@@ -494,6 +508,7 @@ turn(90)            // turn 90 degrees clockwise
 
 <p>Good, now we know what is inside a computer and why. Let's move on.</p>
 
+<!--Chapter 3: Using a Computer-->
 <h2>
 <a id="using-a-computer" class="anchor" href="#using-a-computer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using a Computer</h2>
 
@@ -697,6 +712,7 @@ text.txt
 
 <p>Good, now we know about software from boot up to desktop. Let's move on.</p>
 
+<!--Chapter 4: Programming-->
 <h2>
 <a id="programming" class="anchor" href="#programming" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programming</h2>
 
@@ -734,10 +750,9 @@ text.txt
 </ul>
       </section>
       <footer>
-        <p><small>© 2015 Aaron Haines. This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 License</a></small></p>
+        <p><small>© 2015 Aaron Haines. This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0 License</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-
   </body>
 </html>

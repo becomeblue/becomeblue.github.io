@@ -36,25 +36,12 @@ $(document).ready(function() {
 
 // Interactive terminal elements
 /* Notes: This needs to be amalgamated into a class or object as the repetition in code is ridiculous */
-    $('#code').hide();
-    $('#run').click(function() {
-        $('#code').fadeIn('slow');
-    });
-    $('#reset').click(function() {
-        $('#code').fadeOut('fast');
-    });
+    $('#menu').accordion({collapsible: true, active: false});
+    $('#menu1').accordion({collapsible: true, active: false});
+    var $param = $('<p>{collapsible: true, active: false}<p>');
+    $('#menu2').accordion({collapsible: true, active: false});
 
-    $('#code1').hide();
-    $('#run1').click(function() {
-        $('#code1').fadeIn('slow');
-    });
-    $('#reset1').click(function() {
-        $('#code1').fadeOut('fast');
-    });
-
-    $('#code2').hide();
-    $('#run2').click(function() {
-        $('#code2').fadeIn('slow');
+    $('#menu2').click(function() {
         $('#robo2').animate({left:'+=80px'},'slow');
         $('#robo2').animate({top:'+=80px'},'slow');
         $('#robo2').animate({top:'+=80px'},'slow');
@@ -62,7 +49,6 @@ $(document).ready(function() {
         $('#robo2').animate({left:'+=80px'},'slow');
     });
     $('#reset2').click(function() {
-        $('#code2').fadeOut('fast');
         $('#robo2').animate({left:'-=80px'},0);
         $('#robo2').animate({top:'-=80px'},0);
         $('#robo2').animate({top:'-=80px'},0);
