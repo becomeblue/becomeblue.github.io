@@ -448,18 +448,18 @@ a:hover {
 }
 
 header {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 7px;
+  padding-bottom: 1px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
-  border-bottom: solid 1px #275da1;
+  background: #2980b9;
+  border-bottom: solid 0px #275da1;
 }
 
 header h1 {
   width: 540px;
   margin-top: 0;
   margin-bottom: 0.2em;
-  font-size: 72px;
+  font-size: 26px;
   font-weight: normal;
   line-height: 1;
   color: #fff;
@@ -589,7 +589,7 @@ hr {
 
 table {
   width: 100%;
-  border: 1px solid #ebebeb;
+  border: 0px solid #ebebeb;
 }
 
 th {
@@ -597,9 +597,10 @@ th {
 }
 
 td {
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 20px;
   text-align: center;
-  border: 1px solid #ebebeb;
+  border: 0px solid #ebebeb;
 }
 
 form {
@@ -878,4 +879,3 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { }
-
