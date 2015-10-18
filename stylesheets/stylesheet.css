@@ -448,7 +448,7 @@ a:hover {
 }
 
 header {
-  padding-top: 7px;
+  padding-top: 8px;
   padding-bottom: 1px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   background: #2980b9;
@@ -459,7 +459,7 @@ header h1 {
   width: 540px;
   margin-top: 0;
   margin-bottom: 0.2em;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: normal;
   line-height: 1;
   color: #fff;
