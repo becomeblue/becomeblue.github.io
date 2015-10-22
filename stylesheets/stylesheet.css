@@ -640,14 +640,14 @@ form {
   font-size: 22px;
   font-weight: bold;
   color: #474747;
-  text-indent: 4px;
+  /*text-indent: 4px;*/
 }
-#main-content h2:before {
+/*#main-content h2:before {
   padding-right: 0.3em;
   margin-left: -1.5em;
   content: "//";
   color: #9ddcff;
-}
+}*/
 
 #main-content h3 {
   margin-top: 24px;
@@ -764,7 +764,7 @@ footer {
 }
 
 footer a {
-  color: #d35400;
+  color: #2980b9;
 }
 footer a:hover {
   color: #444;
