@@ -432,9 +432,9 @@ th {
 
 /* LAYOUT STYLES */
 body {
-  font-family: 'Calibri', Helvetica, Arial, serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-family: 'Tahoma', Helvetica, Arial, serif;
+  font-size: 16px;
+  font-weight: normal;
   line-height: 1.5;
   color: #444;
   background: #fff;
@@ -636,9 +636,9 @@ form {
 
 #main-content h2 {
   margin-bottom: 8px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Tahoma', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: normal;
   color: #474747;
   /*text-indent: 4px;*/
 }
@@ -758,9 +758,10 @@ footer {
   padding-top: 20px;
   padding-bottom: 30px;
   margin-top: 40px;
-  font-size: 18px;
-  color: #666;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 13px;
+  text-align: right;
+  color: #7f8c8d;
+  font-family: 'Tahoma', 'Helvetica Neue', Helvetica, Arial, serif;
 }
 
 footer a {
