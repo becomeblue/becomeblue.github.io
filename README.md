@@ -1,1 +1,2 @@
-© 2015 Aaron Haines. All Rights Reserved
+© 2015 Aaron Haines
+Except where noted, all rights reserved.
