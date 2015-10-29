@@ -90,6 +90,11 @@ a:hover {
   padding-right: 5px;
   background: #ff5500;
   color: #fff;
+  text-decoration: none;
+}
+
+#highlight:hover {
+  background: #95a5a6;
 }
 
 footer {
