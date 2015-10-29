@@ -1,56 +1,16 @@
+/* Dimensions */
 body {
   margin: 0;
   width: 790px;
 }
 
+/* Header */
 header {
   width: 780px;
   padding-left: 20px;
   padding-bottom: 1px;
   background: #ff5500;
 }
-
-#banner {
-  width: 514px;
-  padding-left: 20px;
-  border-top: solid 2px #fff;
-  background: #3498db;
-}
-
-#title-green {
-  width: 237px;
-  padding-left: 20px;
-  margin-left: -20px;
-  background: #2ecc71;
-  color: #fff;
-}
-
-#title-red {
-  width: 237px;
-  padding-left: 20px;
-  margin-left: -20px;
-  background: #e74c3c;
-  color: #fff;
-}
-
-#banner h1, #banner a, #banner p, #title h1 {
-  font-family: monospace;
-  margin-top: 0;
-  margin-bottom: 0.2em;
-  line-height: 1.2;
-  color: #fff;
-}
-
-#content-wrapper {
-  width: 740px;
-  padding-left: 20px;
-}
-
-#main-content a {
-  font-size:100%;
-  font-family: monospace;
-}
-
 header h1, header a, header p {
   font-family: monospace;
   margin-top: 0;
@@ -59,32 +19,70 @@ header h1, header a, header p {
   color: #fff;
 }
 
+/* Section Banner */
+#banner {
+  width: 514px;
+  padding-left: 20px;
+  border-top: solid 2px #fff;
+  background: #3498db;
+}
+#banner h1, #banner a, #banner p, #title h1 {
+  font-family: monospace;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  line-height: 1.2;
+  color: #fff;
+}
+
+/* Title Bars */
+#title-green, #title-red, #title-purple {
+  width: 237px;
+  padding-left: 20px;
+  margin-left: -20px;
+  color: #fff;
+}
+#title-green {
+    background: #2ecc71;
+}
+#title-red {
+  background: #e74c3c;
+}
+#title-purple {
+  background: #9b59b6;
+}
+
+/* Main Content */
+#content-wrapper {
+  width: 740px;
+  padding-left: 20px;
+}
+#main-content a {
+  font-size:100%;
+  font-family: monospace;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: monospace;
   font-weight: normal;
 }
-
-p, a {
+p, a, ol {
   font-family: monospace;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: normal;
-  line-height: normal;
-  color: #333333;
+  line-height: 1.5;
+  color: #000;
 }
-
 p {
   margin-bottom: 20px;
 }
-
 a {
   text-decoration: none;
   color: #ff5500;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
+/* Highlight */
 #highlight {
   padding-left: 5px;
   padding-right: 5px;
@@ -92,17 +90,16 @@ a:hover {
   color: #fff;
   text-decoration: none;
 }
-
 #highlight:hover {
   background: #95a5a6;
 }
 
+/* Footer */
 footer {
   width: 790px;
   padding-top: 30px;
   padding-left: 20px;
 }
-
 footer p {
   font-family: monospace;
 }
