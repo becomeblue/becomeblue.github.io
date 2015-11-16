@@ -35,11 +35,17 @@ header h1, header a, header p {
 }
 
 /* Title Bars */
-#title-green, #title-red, #title-purple {
-  width: 237px;
+#title-blue, #title-orange, #title-green, #title-red, #title-purple {
+  width: 247px;
   padding-left: 20px;
   margin-left: -20px;
   color: #fff;
+}
+#title-orange {
+    background: #ff5500;
+}
+#title-blue {
+    background: #3498db;
 }
 #title-green {
     background: #2ecc71;
