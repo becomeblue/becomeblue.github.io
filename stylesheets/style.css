@@ -2,6 +2,7 @@
 body {
   margin: 0;
   width: 790px;
+  background: #171717;
 }
 
 /* Header */
@@ -9,29 +10,29 @@ header {
   width: 780px;
   padding-left: 20px;
   padding-bottom: 1px;
-  background: #ff5500;
+  background: #2B2B2B;
 }
 header h1, header a, header p {
   font-family: monospace;
   margin-top: 0;
   margin-bottom: 0.2em;
   line-height: 1.2;
-  color: #fff;
+  color: #989898;
 }
 
 /* Section Banner */
 #banner {
   width: 514px;
   padding-left: 20px;
-  border-top: solid 2px #fff;
-  background: #3498db;
+  border-top: solid 2px #171717;
+  background: #2B2B2B;
 }
 #banner h1, #banner a, #banner p, #title h1 {
   font-family: monospace;
   margin-top: 0;
   margin-bottom: 0.2em;
   line-height: 1.2;
-  color: #fff;
+  color: #989898;
 }
 
 /* Title Bars */
@@ -42,19 +43,19 @@ header h1, header a, header p {
   color: #fff;
 }
 #title-orange {
-    background: #ff5500;
+  background: #ff5500;
 }
 #title-blue {
-    background: #3498db;
+  background: #3498db;
 }
 #title-green {
-    background: #2ecc71;
+  background: #2ecc71;
 }
 #title-red {
   background: #e74c3c;
 }
 #title-purple {
-  background: #9b59b6;
+  background: #8e44ad;
 }
 
 /* Main Content */
@@ -69,20 +70,28 @@ header h1, header a, header p {
 h1, h2, h3, h4, h5, h6 {
   font-family: monospace;
   font-weight: normal;
+  color: #989898;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 20px;
+  color: #fff;
 }
 p, a, ol {
   font-family: monospace;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
-  color: #000;
+  color: #989898;
 }
 p {
   margin-bottom: 20px;
 }
 a {
   text-decoration: none;
-  color: #ff5500;
+  color: #9b59b6;
 }
 a:hover {
   text-decoration: underline;
@@ -92,12 +101,13 @@ a:hover {
 #highlight {
   padding-left: 5px;
   padding-right: 5px;
-  background: #ff5500;
-  color: #fff;
+  background: #2B2B2B;
+  color: #989898;
   text-decoration: none;
 }
 #highlight:hover {
-  background: #95a5a6;
+  background: #8e44ad;
+  color: #fff;
 }
 
 /* Footer */
