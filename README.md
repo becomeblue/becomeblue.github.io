@@ -1,5 +1,6 @@
 *mudd.co.nz*  
-- The code and files for the website
+- HTML and CSS files for the website
+- Hosted documents
 
 © 2015 Aaron Haines  
 Except where noted, all rights reserved.
